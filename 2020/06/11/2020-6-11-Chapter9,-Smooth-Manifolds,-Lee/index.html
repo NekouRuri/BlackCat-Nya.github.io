@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="MathJax.Hub.Config({     tex2jax: {       skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],       inlineMath: [[&#39;$&#39;,&#39;$&#39;]]     }   });     Lie Subgroup   A Lie subgroup $H$ of $G$ is a">
+  <meta name="description" content="This chapter is about integral curves and flows.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chapter 7, Smooth Manifolds, John M.Lee">
-<meta property="og:url" content="http://yoursite.com/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/index.html">
+<meta property="og:title" content="Chapter 9, Smooth Manifolds, John M.Lee">
+<meta property="og:url" content="http://yoursite.com/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/index.html">
 <meta property="og:site_name" content="Math Notes">
-<meta property="og:description" content="MathJax.Hub.Config({     tex2jax: {       skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],       inlineMath: [[&#39;$&#39;,&#39;$&#39;]]     }   });     Lie Subgroup   A Lie subgroup $H$ of $G$ is a">
+<meta property="og:description" content="This chapter is about integral curves and flows.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-11T10:19:43.081Z">
-<meta property="article:modified_time" content="2020-06-22T01:34:18.410Z">
+<meta property="article:modified_time" content="2020-06-22T15:55:16.063Z">
 <meta property="article:author" content="Kuroneko">
 <meta property="article:tag" content="Smooth-Manifolds-Lee">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/">
+<link rel="canonical" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Chapter 7, Smooth Manifolds, John M.Lee | Math Notes</title>
+  <title>Chapter 9, Smooth Manifolds, John M.Lee | Math Notes</title>
   
 
 
@@ -242,7 +242,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -255,7 +255,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Chapter 7, Smooth Manifolds, John M.Lee
+          Chapter 9, Smooth Manifolds, John M.Lee
         </h1>
 
         <div class="post-meta">
@@ -272,7 +272,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-22 09:34:18" itemprop="dateModified" datetime="2020-06-22T09:34:18+08:00">2020-06-22</time>
+                <time title="Modified: 2020-06-22 23:55:16" itemprop="dateModified" datetime="2020-06-22T23:55:16+08:00">2020-06-22</time>
               </span>
 
           
@@ -286,32 +286,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [['$','$']]
-    }
-  });
-</script>
-
-
-<p><strong><big> Lie Subgroup  </big></strong></p>
-<p>A Lie subgroup $H$ of $G$ is a immersed manifold and a subgroup of $G$ that is a Lie group. But there comes the question. When is $H$ a embedded submanifold of $G$, i.e. a smooth submanifold defined in many books on smooth manifold theory. It may be complicated for general smooth manifolds. But with smooth group structure of Lie group we have a simple critirion.</p>
-<p><strong>Theorem $7.21$.</strong> <em>$H$ is a Lie subgroup of $G$. Then $H$ is  a embedded iff $H$ is closed.</em></p>
-<p><em>proof.</em> Assume $H$ is embedded in $G$ and $h_i \in H \rightarrow g \in G$. Then $h_i^{-1} \rightarrow g^{-1}$. Let $e \in U$ be the domain of a slice chart of $H$ and $e \in W$ be a smaller domain s.t. $\overline{W} \subset U$. So $\overline{W} \cap H$ is a closed and compact set. The multiplication $\varphi : G \times G \rightarrow G$ maps $(g, g^{-1})$ to $e$. So there is a neibourhood $g \in V$ s.t. $\varphi$ maps $V \times V^{-1}$ into $W$ where $V^{-1}$ is the image of $V$ under the inverse map of Lie group. WLOG, assume all $h_i$ are in $V$. We can just fix $j$, and consequently $h_i h_j^{-1} \in \overline{W} \rightarrow g h_j^{-1}$. However, $h_i h_j^{-1} \in \overline{W}\cap H$. So the lmit $g h_j^{-1} \in H$ and $g\in H$. So $H$ is closed.</p>
-<p>Conversely, if $H$ is closed. By the translation property of Lie group it suffice to prove that there is a neighbourhood $\bar{U} \subset G$ of some $\bar{h} \in H$ s.t. $\bar{U} \cap H$ is a smooth submanifold of $\bar{U}$. Since $H$ is a immersed submanifold, we can considering the slice chart $U$ centered at $e$. We assume points in $V = U \cap H$ are of coordinate $(x_1,\dots , x_r , 0 , \dots , 0)$ where $r$ is the rank of $H \hookrightarrow G$. Let $S = \{ (0,\dots  ,0,x_{r+1} , \dots , x_{n}) \in U \}$. The derivative of multiplication map  $ \varphi : V \times S \rightarrow U’$ at $0$ is an identity matrix and therefore $\varphi$ is locally diffeomorphism. Shrink the neighbourhood s.t. $\varphi$ is a diffeomorhism. If $\varphi(v,s) \in H \cap U’$ then $vs \in H$ and $s \in H$. Conversely if $s \in H\cap S$ then $\varphi(v,s) = vs \in H$. Therefore $H \cap U’ = V \times H \cap S$. For $h \in H \cap S$ we have $h \in Vh = \varphi(V,h)$ which is a neighbourhood of $h$ in $H$. If $\varphi(v,h)  \in H \cap S$ then $\varphi(v,h) \in Vh \cap S = \varphi ((V, h) \cap (e,S)) = \varphi(e,h)$ and consequently $v = e, \varphi(v,h)=h \in Vh$. Therefore, $H \cap S$ is discrete in $H$ and it is countable. Since $H$ is closed $H \cap S$ is a countable closed subset of $S$. $H \cap S$ is closed implies it is locally compact Hausdorff space and the Baire category theory holds. If $H \cap S$ has no isolated point then every point in it is closed and with empty interior, and the union of them, $H\cap S$, is with empty interior in $H \cap S$, which is absurd. From above there must be an isolated point $\bar{h} \in H \cap S$ and a open set of $S$, $\tilde{U}$ containing $\bar{h}$. Let $\bar{U} = V \times \tilde{U}$, then $H \cap \bar{U} = V\bar{h}$ which is a smooth submanifold of $\bar{U}$. The conclusion follows.</p>
-<p><strong><big> Lie Subgroup  </big></strong></p>
-<p>An equivariant map $f$ from $M$ to $N$ endowed with Lie group $G$ action, is a map that commute with Lie group action. This along with $G$ being transitive on $M$  is a sufficient condition for a map to have constant rank. This is easily proved by transitive of $G$ on $M$. $\forall x \in M$, let $g\cdot a = m$. Then $Df \circ g(e) = Df(g(e)) Dg(e) = Dgf(e) = Dg(f(e)) Df(e)$ and their ranks are the same. But $g$ is diffeomorphism and $\mathrm{rank}(Df(g(e))Dg(e)) = \mathrm{rank}(Df(x)) = \mathrm{rank}(Dg(f(e)) Df(e)) = \mathrm{rank}(Df(e))$. So the conclusion follows. This is called the <strong><em>Equivariant Rank Theorem</em></strong>. </p>
-<p>The concept of equivalent map leads to the <em>orbit map</em>, $\theta^{(p)} : G \rightarrow M$, $\theta^{(p)}(g) = g\cdot p$. This is of course a equivalent map and $G$ acts on $G$ transitively. Therefore $G$ is of constant rank and the inverse image of $p \in M$, the isotropy group of $p$, is a closed Lie subgroup of $G$. </p>
-<p>Another important  application of the equivariant rank theorem is to prove the orthognal group is an embedded Lie subgroup of $GL(n)$. We can define a smooth map $\phi : GL(n) \rightarrow M(n), A \mapsto A^{T}A$. Then $O(n) = \phi^{-1}(I)$. Then we only need to check that $\phi$ is a equivariant map. Let $GL(n)$ and on $M(n)$ s.t. $X\cdot A = A^{T}XA$. It is routine to chech that $\phi$ is a equivariant map.</p>
-<p>Since the rank is constant, we can compute the dimension of $O(n)$ by computing the rank of $\phi$ at $I$. Consider the curve at $\gamma(t) = I+tB$.</p>
-<script type="math/tex; mode=display">d\phi_{I}(B) = \frac{d}{dt}\vert_{t=0}(I+tB)^{T}(I+tB) = B^{T}+B.</script><p>Hence $Im D\phi = S \subset D_{I}M$ is the symmetric matrices and $rank(\phi) = \frac{n(n+1)}{2}$. Therefore $\mathrm{dim}\: O(n)= n^2 - \frac{n(n+1)}{2} = \frac{n(n-1)}{2}$. Similarly you can carry this to the unitary group.</p>
-<p><strong><big>Semidirect Products</big></strong></p>
-<p>We can define semidirect product on Lie groups. For $\theta : H\times N \rightarrow N$ a smooth left action of $H$ on $N$, if every $\theta_h$ is a group automorphism, we can define $N\rtimes_\theta H $ by $(n,h)(n’,h’) = (n\theta(n’),hh’)$. It is again a Lie group. Just like in general case, if $N,H$ be closed Lie subgroup of $G$ with trivial intersection, $NH = G$ and $N$ is normal, then $G$ is isomorphic to $N \rtimes H$ by action $\theta_h (n) = hnh^{-1}$. Under these hypotheses, we say that $G$ is the internal semidirect product of $N$ and $H$.</p>
-<p><strong><big>Representations</big></strong></p>
-<p>A representation of a Lie group is a Lie group homomorphism $\rho : G \rightarrow GL(V)$. Note that $G$ acts on $V$ linear iff $G$ act as a representation.</p>
+        <p>This chapter is about integral curves and flows.</p>
 
     </div>
 
@@ -330,13 +305,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/09/2020-6-9-Start-of-MathNotes/" rel="prev" title="Welcome">
-      <i class="fa fa-chevron-left"></i> Welcome
+    <a href="/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee/" rel="prev" title="Chapter 8, Smooth Manifolds, John M.Lee">
+      <i class="fa fa-chevron-left"></i> Chapter 8, Smooth Manifolds, John M.Lee
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee/" rel="next" title="Chapter 8, Smooth Manifolds, John M.Lee">
-      Chapter 8, Smooth Manifolds, John M.Lee <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
