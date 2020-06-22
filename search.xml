@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chapter 8, Smooth Manifolds, John M.Lee</title>
+    <url>/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee%20copy/</url>
+    <content><![CDATA[<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script>
+
+
+<p><strong><big>Lie Brackets</big></strong></p>
+<p>Lie brackets is a way to construct new vector fields $[X,Y]$ from existing vector fields $X$ and $Y$. It has some basic and common properties. Naturality is a significant property of Lie brackets. Also has it <strong><em>Jacobi identity</em></strong> $[X,[Y,Z]] + [Y,[z,X]] + [Z,[X,Y]] = 0 $ and another identity $[fX,gY] = fg[X,Y] + (fXg)Y - g(Yf)X $. </p>
+<p>There is a extemely useful coordinate formula for Lie brackets</p>
+<div id="refer-thm1"></div>
+$$[X,Y] = (XY^i - YX^i)\frac{\partial}{\partial x^i}.$$ 
+
+<p>To check this, it is just a formal routine.</p>
+<p><strong><big>The Lie Algebra of a Lie group</big></strong></p>
+<p>Lie brackets lead to an important concept, the Lie algebra of a Lie group $G$. Let us notice that $\forall g \in G$, $g$ can be adapted to become a diffeomorphism by left translation $L_g(h) = gh$. The smooth vector fields on $G$ that is <strong><em>left-invariant</em></strong> form a linear subspace of $\mathfrak{X}(G)$. Moreover, this subspace is closed under Lie brackets  since there is the naturality $L_g[X,Y] = [L_gX , L_g Y]$ as $L_g$ is a diffeomorphism. </p>
+<p>Then we give a general definition. A <strong><em>Lie algebra</em></strong> (over $\mathbb{R}$) is a real vector space $\mathfrak{g}$ endowed with a map called bracket from $\mathfrak{g} \times \mathfrak{g}$ to $\mathfrak{g}$, $(X,Y) \mapsto [X,Y]$, that satisfies <em>bilinearity</em>, <em>antisymmetry</em> and <em>Jacobi identity</em>. A <strong><em>Lie algebra homomorphism</em></strong> is a homomorphism preserving brackets. The above example is obviously a Lie algebra, which is called the Lie algebra of $G$, usually denoted by $\mathrm{Lie}(G)$. Infact, this vector space is finite-dimensional and with dimension equal to $G$. This can be proved by evaluation map $\epsilon : \mathrm{Lie}(G) \rightarrow T_\epsilon G$, given by $\epsilon(X) = X_e$, using the fact that the left multiplication is transitive. A global frame of $G$ is called a <strong><em>left-invariant frame</em></strong>. </p>
+<p>The Lie algebra of $\mathbb{R}^n, \mathbb{S}^1$ and $\mathbb{T}^n$ is abelian. And generally Lie algebra $\mathfrak{g}$ of abelian Lie group $G$ is abelian. Notice that the inverse map $i$ is a diffeomorphism and in the case $G$ is abelian, for $X \in \mathfrak{g}$, we have $iX$ is left-invariant and in $\mathfrak{g}$. However at $e \in G$, $d_e i v = -v$ so $iX = -X$, $- [ X,Y] = i[X,Y] = [iX,iY] = [-X,-Y] = [X , Y]$ and $[X,Y] = 0$. You may think that since $G$ is parallelizable and the definition of $v^L$ we have the coefficients of $v^L$ is constant and by $[X,Y] = (XY^i - YX^i)\frac{\partial}{\partial x^i}$<a href="#refer-thm1"><sup>1</sup></a>  we have $[X,Y] = 0 $ without using commutativity. However, this is wrong since in the above quoted theorem the local trivialization is with respect to a local coordinate of the manifold instead of global trivilization of the tangent bundle.</p>
+]]></content>
+      <tags>
+        <tag>Smooth-Manifolds-Lee</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Welcome</title>
+    <url>/2020/06/09/2020-6-9-Start-of-MathNotes/</url>
+    <content><![CDATA[<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script>
+
+
+
+
+<p>This is a project for MathNotes.</p>
+<p align="right">Black_Cat</p>
+
+]]></content>
+      <tags>
+        <tag>Model</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chapter 7, Smooth Manifolds, John M.Lee</title>
     <url>/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/</url>
     <content><![CDATA[<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -28,51 +82,8 @@
 <p>Hence $Im D\phi = S \subset D_{I}M$ is the symmetric matrices and $rank(\phi) = \frac{n(n+1)}{2}$. Therefore $\mathrm{dim}: O(n)= n^2 - \frac{n(n+1)}{2} = \frac{n(n-1)}{2}$. Similarly you can carry this to the unitary group.</p>
 <p><strong><big>Semidirect Products</big></strong></p>
 <p>We can define semidirect product on Lie groups. For $\theta : H\times N \rightarrow N$ a smooth left action of $H$ on $N$, if every $\theta_h$ is a group automorphism, we can define $N\rtimes_\theta H $ by $(n,h)(n’,h’) = (n\theta(n’),hh’)$. It is again a Lie group. Just like in general case, if $N,H$ be closed Lie subgroup of $G$ with trivial intersection, $NH = G$ and $N$ is normal, then $G$ is isomorphic to $N \rtimes H$ by action $\theta_h (n) = hnh^{-1}$. Under these hypotheses, we say that $G$ is the internal semidirect product of $N$ and $H$.</p>
-]]></content>
-      <tags>
-        <tag>Smooth-Manifolds-Lee</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Welcome</title>
-    <url>/2020/06/09/2020-6-9-Start-of-MathNotes/</url>
-    <content><![CDATA[<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [['$','$']]
-    }
-  });
-</script>
-
-
-
-
-<p>This is a $LaTeX$ project for MathNotes.</p>
-<p align="right">Black_Cat</p>
-
-]]></content>
-      <tags>
-        <tag>Model</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chapter 8, Smooth Manifolds, John M.Lee</title>
-    <url>/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee%20copy/</url>
-    <content><![CDATA[<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [['$','$']]
-    }
-  });
-</script>
-
-
 <p><strong><big>Representations</big></strong></p>
-<p>A representation $\rho : G \rightarrow GL(V)$. Note that $G$ acts on $V$ linear iff $G$ act as a representation.</p>
+<p>A representation of a Lie group is a Lie group homomorphism $\rho : G \rightarrow GL(V)$. Note that $G$ acts on $V$ linear iff $G$ act as a representation.</p>
 ]]></content>
       <tags>
         <tag>Smooth-Manifolds-Lee</tag>
