@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Chapter 9, Smooth Manifolds, John M.Lee</title>
-    <url>/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/</url>
-    <content><![CDATA[<p>This chapter is about integral curves and flows.</p>
-]]></content>
-      <tags>
-        <tag>Smooth-Manifolds-Lee</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Welcome</title>
-    <url>/2020/06/09/2020-6-9-Start-of-MathNotes/</url>
-    <content><![CDATA[<p>This is a $\TeX$ project for MathNotes.</p>
-<p align="right">Black_Cat</p>
-
-]]></content>
-      <tags>
-        <tag>Model</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Chapter 8, Smooth Manifolds, John M.Lee</title>
     <url>/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee/</url>
     <content><![CDATA[<p><strong><big>Lie Brackets</big></strong></p>
@@ -37,7 +17,7 @@
 <p>A interesting property of Lie algebra of a lie group is that a homomorphism of Lie group induces a homomorphism of a Lie algebra. In large part, the imoprtance of the Lie algebra of a Lie group stems from this fact.</p>
 <p><strong>Theorem</strong> <em>Let $G, H$ be Lie groups, and let $\mathfrak{g}, \mathfrak{h}$ be their Lie algebras. Suppose $F:G \rightarrow H$ is a Lie group homomorphism. For every $X \in \mathfrak{g}$, there is a unique vector field in $\mathfrak{h}$ that is $F$-related to $X$. With this vector field denoted by</em> $F_* X$, <em>the map</em> $F_* : \mathfrak{g} \rightarrow \mathfrak{h} $ <em>so defined is a Lie akgebra homomorphism.</em></p>
 <p><em>Proof.</em> In fact $X$ in one of the Lie algebra is uniquely determined by $X\vert e \in T_e$ and $F_*$ induces homomorphism on the tangent space at $e$. From this the proof is easily derived. To check that $F_*$ is well defined, it suffices to check that $(d_eFX\vert_e)^L\vert F(g) = d_gF X\vert_g$. </p>
-<script type="math/tex; mode=display">d_gF X\vert_g = d_gF d_eL_g X\vert_e = d_e F\circ L_g X\vert_e = d_e L_{F(g)} d_e F X\vert_e = (d_eFX\vert_e)^L\vert_{F(g)}.</script><p>The remaining is to check the preserving of brackets. But since if $X, Y$ and $F_<em> X , F_</em> Y$ are $F$-related, the naturality of brackets states that $F_*[X,Y] = [F_*X , F_*Y]$. Q.E.D.</p>
+<script type="math/tex; mode=display">d_gF X\vert_g = d_gF d_eL_g X\vert_e = d_e F\circ L_g X\vert_e = d_e L_{F(g)} d_e F X\vert_e = (d_eFX\vert_e)^L\vert_{F(g)}.</script><p>The remaining is to check the preserving of brackets. But since if $X, Y$ and $F_* X , F_* Y$ are $F$-related, the naturality of brackets states that $F_*[X,Y] = [F_*X , F_*Y]$. Q.E.D.</p>
 <p>In previous section we mentioned the fact that if $G$ is abelian then $iX$ is left-invarient. By the theorem above this derives directly as $i$ is a Lie group homomorphism as $G$ is abelian.</p>
 <p><strong>Corollary</strong> $\mathrm{Lie}(H)$ is a Lie subalgebra of $\mathrm{Lie}(G)$.</p>
 <p><strong>Example.</strong> The othorganoal group $O(n)$ is a Lie subgroup of $GL(n, \mathbb{R})$. It is euqal to the level set $\Phi^{-1}(I_n)$ where $\Phi(A) = A^TA$. Then $T_{I_n}O(n) = ker(d_{I_n}\Phi)$. However, $d_{I_n}\Phi (B) = B^T + B$. Therefore $T_{I_n}O(n) = ker(d_{I_n}\Phi) = \{ \text{skew-symmetric $n\times n$ matrics} \}$, which is now denoted by $\mathfrak{o}(n)$.</p>
@@ -85,6 +65,26 @@
 ]]></content>
       <tags>
         <tag>Smooth-Manifolds-Lee</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chapter 9, Smooth Manifolds, John M.Lee</title>
+    <url>/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/</url>
+    <content><![CDATA[<p>This chapter is about integral curves and flows.</p>
+]]></content>
+      <tags>
+        <tag>Smooth-Manifolds-Lee</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Welcome</title>
+    <url>/2020/06/09/2020-6-9-Start-of-MathNotes/</url>
+    <content><![CDATA[<p>This is a $\TeX$ project for MathNotes.</p>
+<p align="right">Black_Cat</p>
+
+]]></content>
+      <tags>
+        <tag>Model</tag>
       </tags>
   </entry>
 </search>
