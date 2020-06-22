@@ -236,7 +236,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee%20copy/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -250,7 +250,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee%20copy/" class="post-title-link" itemprop="url">Chapter 8, Smooth Manifolds, John M.Lee</a>
+            <a href="/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee/" class="post-title-link" itemprop="url">Chapter 8, Smooth Manifolds, John M.Lee</a>
         </h2>
 
         <div class="post-meta">
@@ -267,7 +267,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-22 16:56:41" itemprop="dateModified" datetime="2020-06-22T16:56:41+08:00">2020-06-22</time>
+                <time title="Modified: 2020-06-22 23:51:18" itemprop="dateModified" datetime="2020-06-22T23:51:18+08:00">2020-06-22</time>
               </span>
 
           
@@ -281,18 +281,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [['$','$']]
-    }
-  });
-</script>
-
-
-<p><strong><big>Lie Brackets</big></strong></p>
+          <p><strong><big>Lie Brackets</big></strong></p>
 <p>Lie brackets is a way to construct new vector fields $[X,Y]$ from existing vector fields $X$ and $Y$. It has some basic and common properties. Naturality is a significant property of Lie brackets. Also has it <strong><em>Jacobi identity</em></strong> $[X,[Y,Z]] + [Y,[z,X]] + [Z,[X,Y]] = 0 $ and another identity $[fX,gY] = fg[X,Y] + (fXg)Y - g(Yf)X $. </p>
 <p>There is a extemely useful coordinate formula for Lie brackets</p>
 <div id="refer-thm1"></div>
@@ -303,6 +292,26 @@ $$[X,Y] = (XY^i - YX^i)\frac{\partial}{\partial x^i}.$$
 <p>Lie brackets lead to an important concept, the Lie algebra of a Lie group $G$. Let us notice that $\forall g \in G$, $g$ can be adapted to become a diffeomorphism by left translation $L_g(h) = gh$. The smooth vector fields on $G$ that is <strong><em>left-invariant</em></strong> form a linear subspace of $\mathfrak{X}(G)$. Moreover, this subspace is closed under Lie brackets  since there is the naturality $L_g[X,Y] = [L_gX , L_g Y]$ as $L_g$ is a diffeomorphism. </p>
 <p>Then we give a general definition. A <strong><em>Lie algebra</em></strong> (over $\mathbb{R}$) is a real vector space $\mathfrak{g}$ endowed with a map called bracket from $\mathfrak{g} \times \mathfrak{g}$ to $\mathfrak{g}$, $(X,Y) \mapsto [X,Y]$, that satisfies <em>bilinearity</em>, <em>antisymmetry</em> and <em>Jacobi identity</em>. A <strong><em>Lie algebra homomorphism</em></strong> is a homomorphism preserving brackets. The above example is obviously a Lie algebra, which is called the Lie algebra of $G$, usually denoted by $\mathrm{Lie}(G)$. Infact, this vector space is finite-dimensional and with dimension equal to $G$. This can be proved by evaluation map $\epsilon : \mathrm{Lie}(G) \rightarrow T_\epsilon G$, given by $\epsilon(X) = X_e$, using the fact that the left multiplication is transitive. A global frame of $G$ is called a <strong><em>left-invariant frame</em></strong>. </p>
 <p>The Lie algebra of $\mathbb{R}^n, \mathbb{S}^1$ and $\mathbb{T}^n$ is abelian. And generally Lie algebra $\mathfrak{g}$ of abelian Lie group $G$ is abelian. Notice that the inverse map $i$ is a diffeomorphism and in the case $G$ is abelian, for $X \in \mathfrak{g}$, we have $iX$ is left-invariant and in $\mathfrak{g}$. However at $e \in G$, $d_e i v = -v$ so $iX = -X$, $- [ X,Y] = i[X,Y] = [iX,iY] = [-X,-Y] = [X , Y]$ and $[X,Y] = 0$. You may think that since $G$ is parallelizable and the definition of $v^L$ we have the coefficients of $v^L$ is constant and by $[X,Y] = (XY^i - YX^i)\frac{\partial}{\partial x^i}$<a href="#refer-thm1"><sup>1</sup></a>  we have $[X,Y] = 0 $ without using commutativity. However, this is wrong since in the above quoted theorem the local trivialization is with respect to a local coordinate of the manifold instead of global trivilization of the tangent bundle.</p>
+<p>As for general linear group, $\mathrm{Lie}(GL(n,\mathbb{R}))\cong T_{I_n}GL(n,\mathbb{R}) \cong \mathfrak{gl}(n,\mathbb{R})$ by canonical maps.</p>
+<p><strong><big>Induced Lie Algebra Homomorphism</big></strong></p>
+<p>A interesting property of Lie algebra of a lie group is that a homomorphism of Lie group induces a homomorphism of a Lie algebra. In large part, the imoprtance of the Lie algebra of a Lie group stems from this fact.</p>
+<p><strong>Theorem</strong> <em>Let $G, H$ be Lie groups, and let $\mathfrak{g}, \mathfrak{h}$ be their Lie algebras. Suppose $F:G \rightarrow H$ is a Lie group homomorphism. For every $X \in \mathfrak{g}$, there is a unique vector field in $\mathfrak{h}$ that is $F$-related to $X$. With this vector field denoted by</em> $F_* X$, <em>the map</em> $F_* : \mathfrak{g} \rightarrow \mathfrak{h} $ <em>so defined is a Lie akgebra homomorphism.</em></p>
+<p><em>Proof.</em> In fact $X$ in one of the Lie algebra is uniquely determined by $X\vert e \in T_e$ and $F_*$ induces homomorphism on the tangent space at $e$. From this the proof is easily derived. To check that $F_*$ is well defined, it suffices to check that $(d_eFX\vert_e)^L\vert F(g) = d_gF X\vert_g$. </p>
+<p>$$d_gF X\vert_g = d_gF d_eL_g X\vert_e = d_e F\circ L_g X\vert_e = d_e L_{F(g)} d_e F X\vert_e = (d_eFX\vert_e)^L\vert_{F(g)}.$$</p>
+<p>The remaining is to check the preserving of brackets. But since if $X, Y$ and $F_* X , F_* Y$ are $F$-related, the naturality of brackets states that $F_*[X,Y] = [F_*X , F_*Y]$. Q.E.D.</p>
+<p>In previous section we mentioned the fact that if $G$ is abelian then $iX$ is left-invarient. By the theorem above this derives directly as $i$ is a Lie group homomorphism as $G$ is abelian.</p>
+<p><strong>Corollary</strong> $\mathrm{Lie}(H)$ is a Lie subalgebra of $\mathrm{Lie}(G)$.</p>
+<p><strong>Example.</strong> The othorganoal group $O(n)$ is a Lie subgroup of $GL(n, \mathbb{R})$. It is euqal to the level set $\Phi^{-1}(I_n)$ where $\Phi(A) = A^TA$. Then $T_{I_n}O(n) = ker(d_{I_n}\Phi)$. However, $d_{I_n}\Phi (B) = B^T + B$. Therefore $T_{I_n}O(n) = ker(d_{I_n}\Phi) = { \text{skew-symmetric $n\times n$ matrics} }$, which is now denoted by $\mathfrak{o}(n)$.</p>
+<p><strong>Proposition</strong> Consider $\mathrm{GL}(n,\mathbb{C})$ as a real Lie group. Then the composition</p>
+<p>$$\mathrm{Lie}(\mathrm{GL}(n,\mathbb{C})) \overset{\epsilon}{\longrightarrow} T_{I_n}\mathrm{GL}(n,\mathbb{C}) \overset{\varphi}{\longrightarrow} \mathfrak{gl}(n,\mathbb{C})$$</p>
+<p>yields a Lie algebra isomorphism between $\mathrm{Lie}\mathrm{GL}(n,\mathbb{C})$ and the matrix algebra $\mathfrak{gl}(n,\mathbb{C})$.</p>
+<p><em>Proof.</em> The result is true if replacing $\mathbb{C}$ by $\mathbb{R}$. However, there is a canonical embedding  $\mathrm{GL}(n,\mathbb{C}) \overset{\beta}{\hookrightarrow} \mathrm{GL}(2n, \mathbb{R})$:</p>
+<p>$$\left( a_{ij}+b_{ij}i\right) \mapsto \left( \begin{pmatrix} a_{ij} &amp; -b_{ij} \ b_{ij} &amp; a_{ij} \end{pmatrix} \right).$$</p>
+<p>We can also consider $\beta$ as a map from $M(n,\mathbb{C})$. Note that $\beta(AB) = \beta(A) \beta(B)$. We also have commutative diagram:</p>
+<p>$$\require{AMScd} \begin{CD} \mathrm{Lie}(\mathrm{GL}(n,\mathbb{C})) @&gt;\epsilon&gt;&gt; T_{I_n}\mathrm{GL}(n,\mathbb{C})@&gt;\varphi&gt;&gt;\mathfrak{gl}(n,\mathbb{C})\ @V{\beta}VV @V{d_{I_n}\beta}VV @V{\alpha}VV\ \mathrm{Lie}(\mathrm{GL}(2n,\mathbb{R})) @&gt;\epsilon&gt;&gt;T_{I_{2n}}\mathrm{GL}(2n,\mathbb{R})  @&gt;\varphi&gt;&gt; \mathfrak{gl}(2n,\mathbb{R});\end{CD}$$</p>
+<p>where $\alpha$ is properly chosen to let the diagram commutative. $\beta$ is linear so $d_{I_n}\beta$ shares the same behavior as $\beta$, and so is $\alpha$. Therefore $\alpha ([X,Y]) = \alpha(XY)-\alpha(YX) = \alpha(X)\alpha(Y)-\alpha(Y)\alpha(X) = [\alpha(X), \alpha(Y)]$ and $\alpha$ is a Lie algebra homomorphism. Chasing the diagram then we can make sure $\varphi \circ \epsilon$ is a Lie algebra isomorphism.</p>
+<p>We close this chapter by stating a deep algebraic result.</p>
+<p><strong>Theorem(Ado’s Theorem)</strong>. <em>Every finite-dimensional real Lie algebra admits a faithful finite-dimensional representation.</em></p>
 
       
     </div>
