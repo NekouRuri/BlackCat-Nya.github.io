@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chapter 9, Smooth Manifolds, John M.Lee</title>
+    <url>/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/</url>
+    <content><![CDATA[<p>This chapter is about integral curves and flows.</p>
+<p>Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an <strong><em>integral curve</em></strong> If $\dot{\gamma}(t) = V\vert_{\gamma{t}}$. </p>
+<p>A collection of integral curve is called a <strong><em>flow</em></strong>. There are several beautiful properties of <strong><em>global flows</em></strong> that can be easily proved. Let us give a precise definition.</p>
+<p><strong>Definition 1.</strong> <em>A <strong>global flow</strong> is a continuous map $\theta : \mathbb{R}\times M\rightarrow M$ such that</em> </p>
+<script type="math/tex; mode=display">\begin{align} \theta(0,\; ) &= Id\\ \theta(t,\theta(s,p)) &= \theta(t+s,p).\end{align}</script><p>Therefore $\forall t$, $\theta(t, \; )$ is a homoemorphism. A smooth global flow naturally determines a smooth vector field and a collection of integral curve, and this vector fields determines the original smooth global flow. This means for the vector field, every integral curve $\gamma(t)$ is defined for all $t \in \mathbb{R}$. However, this may not be true, i.e. $t$ is just defined on an open set containing $0$. Therefore we can generalize global flows to flows.</p>
+<p><strong>Definition 2.</strong> <em>A flow domain for $M$ is an open subset $\mathscr{D} \subseteq \mathbb{R} \times M$ such that $\forall p \in M$, $\mathscr{D}^{(p)}= \{ t \in \mathbb{R} : (t,p) \in \mathscr{D}\}$ is an open interval containing $0$. A flow on $M$ is a continuous map $\theta : \mathscr{D} \rightarrow M$, that satisfices</em></p>
+<script type="math/tex; mode=display">\begin{align} \theta(0,\; ) &= Id\\ \theta(t,\theta(s,p)) &= \theta(t+s,p).\end{align}</script><p>We sometimes call this kind of flows a <strong><em>local flow</em></strong>. A <strong><em>infinitestimal generator</em></strong> of a flow $\theta$ is defined by $V_p = \theta^{(p)}{‘}(0)$.</p>
+]]></content>
+      <tags>
+        <tag>Smooth-Manifolds-Lee</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chapter 7, Smooth Manifolds, John M.Lee</title>
     <url>/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/</url>
     <content><![CDATA[<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -35,13 +50,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Chapter 9, Smooth Manifolds, John M.Lee</title>
-    <url>/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/</url>
-    <content><![CDATA[<p>This chapter is about integral curves and flows.</p>
-<p>Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an <strong><em>integral curve</em></strong> If $\dot{\gamma}(t) = V\vert_{\gamma{t}}$. </p>
+    <title>Welcome</title>
+    <url>/2020/06/09/2020-6-9-Start-of-MathNotes/</url>
+    <content><![CDATA[<p>This is a $\TeX$ project for MathNotes.</p>
+<p align="right">Black_Cat</p>
+
 ]]></content>
       <tags>
-        <tag>Smooth-Manifolds-Lee</tag>
+        <tag>Model</tag>
       </tags>
   </entry>
   <entry>
@@ -75,17 +91,6 @@
 ]]></content>
       <tags>
         <tag>Smooth-Manifolds-Lee</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Welcome</title>
-    <url>/2020/06/09/2020-6-9-Start-of-MathNotes/</url>
-    <content><![CDATA[<p>This is a $\TeX$ project for MathNotes.</p>
-<p align="right">Black_Cat</p>
-
-]]></content>
-      <tags>
-        <tag>Model</tag>
       </tags>
   </entry>
 </search>

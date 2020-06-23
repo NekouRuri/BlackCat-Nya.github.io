@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="This chapter is about integral curves and flows. Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an integral curve If $\dot{\gamma}(t) &#x3D; V\vert_{\gamma{t}}$.">
+  <meta name="description" content="This chapter is about integral curves and flows. Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an integral curve If $\dot{\gamma}(t) &#x3D; V\vert_{\gamma{t}}$.  A collect">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Chapter 9, Smooth Manifolds, John M.Lee">
 <meta property="og:url" content="http://yoursite.com/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/index.html">
 <meta property="og:site_name" content="Math Notes">
-<meta property="og:description" content="This chapter is about integral curves and flows. Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an integral curve If $\dot{\gamma}(t) &#x3D; V\vert_{\gamma{t}}$.">
+<meta property="og:description" content="This chapter is about integral curves and flows. Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an integral curve If $\dot{\gamma}(t) &#x3D; V\vert_{\gamma{t}}$.  A collect">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-11T10:19:43.081Z">
-<meta property="article:modified_time" content="2020-06-23T01:33:32.067Z">
+<meta property="article:modified_time" content="2020-06-23T09:28:00.858Z">
 <meta property="article:author" content="Kuroneko">
 <meta property="article:tag" content="Smooth-Manifolds-Lee">
 <meta name="twitter:card" content="summary">
@@ -272,7 +272,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-23 09:33:32" itemprop="dateModified" datetime="2020-06-23T09:33:32+08:00">2020-06-23</time>
+                <time title="Modified: 2020-06-23 17:28:00" itemprop="dateModified" datetime="2020-06-23T17:28:00+08:00">2020-06-23</time>
               </span>
 
           
@@ -288,6 +288,11 @@
       
         <p>This chapter is about integral curves and flows.</p>
 <p>Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an <strong><em>integral curve</em></strong> If $\dot{\gamma}(t) = V\vert_{\gamma{t}}$. </p>
+<p>A collection of integral curve is called a <strong><em>flow</em></strong>. There are several beautiful properties of <strong><em>global flows</em></strong> that can be easily proved. Let us give a precise definition.</p>
+<p><strong>Definition 1.</strong> <em>A <strong>global flow</strong> is a continuous map $\theta : \mathbb{R}\times M\rightarrow M$ such that</em> </p>
+<script type="math/tex; mode=display">\begin{align} \theta(0,\; ) &= Id\\ \theta(t,\theta(s,p)) &= \theta(t+s,p).\end{align}</script><p>Therefore $\forall t$, $\theta(t, \; )$ is a homoemorphism. A smooth global flow naturally determines a smooth vector field and a collection of integral curve, and this vector fields determines the original smooth global flow. This means for the vector field, every integral curve $\gamma(t)$ is defined for all $t \in \mathbb{R}$. However, this may not be true, i.e. $t$ is just defined on an open set containing $0$. Therefore we can generalize global flows to flows.</p>
+<p><strong>Definition 2.</strong> <em>A flow domain for $M$ is an open subset $\mathscr{D} \subseteq \mathbb{R} \times M$ such that $\forall p \in M$, $\mathscr{D}^{(p)}= \{ t \in \mathbb{R} : (t,p) \in \mathscr{D}\}$ is an open interval containing $0$. A flow on $M$ is a continuous map $\theta : \mathscr{D} \rightarrow M$, that satisfices</em></p>
+<script type="math/tex; mode=display">\begin{align} \theta(0,\; ) &= Id\\ \theta(t,\theta(s,p)) &= \theta(t+s,p).\end{align}</script><p>We sometimes call this kind of flows a <strong><em>local flow</em></strong>. A <strong><em>infinitestimal generator</em></strong> of a flow $\theta$ is defined by $V_p = \theta^{(p)}{‘}(0)$.</p>
 
     </div>
 
@@ -306,13 +311,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/11/2020-6-11-Chapter8,-Smooth-Manifolds,-Lee/" rel="prev" title="Chapter 8, Smooth Manifolds, John M.Lee">
-      <i class="fa fa-chevron-left"></i> Chapter 8, Smooth Manifolds, John M.Lee
+    <a href="/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/" rel="prev" title="Chapter 7, Smooth Manifolds, John M.Lee">
+      <i class="fa fa-chevron-left"></i> Chapter 7, Smooth Manifolds, John M.Lee
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/" rel="next" title="Chapter 7, Smooth Manifolds, John M.Lee">
-      Chapter 7, Smooth Manifolds, John M.Lee <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     

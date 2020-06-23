@@ -236,6 +236,77 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kuroneko">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Math Notes">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/" class="post-title-link" itemprop="url">Chapter 9, Smooth Manifolds, John M.Lee</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-06-11 18:19:43" itemprop="dateCreated datePublished" datetime="2020-06-11T18:19:43+08:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-06-23 17:28:00" itemprop="dateModified" datetime="2020-06-23T17:28:00+08:00">2020-06-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>This chapter is about integral curves and flows.</p>
+<p>Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an <strong><em>integral curve</em></strong> If $\dot{\gamma}(t) = V\vert_{\gamma{t}}$. </p>
+<p>A collection of integral curve is called a <strong><em>flow</em></strong>. There are several beautiful properties of <strong><em>global flows</em></strong> that can be easily proved. Let us give a precise definition.</p>
+<p><strong>Definition 1.</strong> <em>A <strong>global flow</strong> is a continuous map $\theta : \mathbb{R}\times M\rightarrow M$ such that</em> </p>
+<script type="math/tex; mode=display">\begin{align} \theta(0,\; ) &= Id\\ \theta(t,\theta(s,p)) &= \theta(t+s,p).\end{align}</script><p>Therefore $\forall t$, $\theta(t, \; )$ is a homoemorphism. A smooth global flow naturally determines a smooth vector field and a collection of integral curve, and this vector fields determines the original smooth global flow. This means for the vector field, every integral curve $\gamma(t)$ is defined for all $t \in \mathbb{R}$. However, this may not be true, i.e. $t$ is just defined on an open set containing $0$. Therefore we can generalize global flows to flows.</p>
+<p><strong>Definition 2.</strong> <em>A flow domain for $M$ is an open subset $\mathscr{D} \subseteq \mathbb{R} \times M$ such that $\forall p \in M$, $\mathscr{D}^{(p)}= \{ t \in \mathbb{R} : (t,p) \in \mathscr{D}\}$ is an open interval containing $0$. A flow on $M$ is a continuous map $\theta : \mathscr{D} \rightarrow M$, that satisfices</em></p>
+<script type="math/tex; mode=display">\begin{align} \theta(0,\; ) &= Id\\ \theta(t,\theta(s,p)) &= \theta(t+s,p).\end{align}</script><p>We sometimes call this kind of flows a <strong><em>local flow</em></strong>. A <strong><em>infinitestimal generator</em></strong> of a flow $\theta$ is defined by $V_p = \theta^{(p)}{‘}(0)$.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter7,-Smooth-Manifolds,-Lee/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -307,72 +378,6 @@
 <p>We can define semidirect product on Lie groups. For $\theta : H\times N \rightarrow N$ a smooth left action of $H$ on $N$, if every $\theta_h$ is a group automorphism, we can define $N\rtimes_\theta H $ by $(n,h)(n’,h’) = (n\theta(n’),hh’)$. It is again a Lie group. Just like in general case, if $N,H$ be closed Lie subgroup of $G$ with trivial intersection, $NH = G$ and $N$ is normal, then $G$ is isomorphic to $N \rtimes H$ by action $\theta_h (n) = hnh^{-1}$. Under these hypotheses, we say that $G$ is the internal semidirect product of $N$ and $H$.</p>
 <p><strong><big>Representations</big></strong></p>
 <p>A representation of a Lie group is a Lie group homomorphism $\rho : G \rightarrow GL(V)$. Note that $G$ acts on $V$ linear iff $G$ act as a representation.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Kuroneko">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Math Notes">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/11/2020-6-11-Chapter9,-Smooth-Manifolds,-Lee/" class="post-title-link" itemprop="url">Chapter 9, Smooth Manifolds, John M.Lee</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-06-11 18:19:43" itemprop="dateCreated datePublished" datetime="2020-06-11T18:19:43+08:00">2020-06-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-23 09:33:32" itemprop="dateModified" datetime="2020-06-23T09:33:32+08:00">2020-06-23</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>This chapter is about integral curves and flows.</p>
-<p>Let $V$ be a vector field on $M$ and $\gamma(t)$ be a curve on $M$. $\gamma$ is an <strong><em>integral curve</em></strong> If $\dot{\gamma}(t) = V\vert_{\gamma{t}}$. </p>
 
       
     </div>
